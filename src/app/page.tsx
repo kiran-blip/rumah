@@ -8,13 +8,15 @@ export default function LoginPage() {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-8 fade-in">
-      <div className="flex flex-col items-center gap-3 mb-10">
+    <div className="flex flex-col items-center min-h-screen px-8 fade-in">
+      <div className="flex-1" />
+
+      <div className="flex flex-col items-center gap-4 mb-12">
         <Logo />
         <p className="text-gray-500 text-sm">Join our verified rental community.</p>
       </div>
 
-      <div className="w-full max-w-sm flex flex-col gap-4">
+      <div className="w-full max-w-xs flex flex-col gap-4">
         <input
           type="email"
           placeholder="Email"
@@ -40,7 +42,7 @@ export default function LoginPage() {
           </svg>
         </div>
 
-        <div className="divider">or</div>
+        <div className="divider my-1">or</div>
 
         <button
           className="btn-google"
@@ -51,16 +53,18 @@ export default function LoginPage() {
         </button>
       </div>
 
-      <div className="mt-auto pt-16 pb-6 text-center">
-        <p className="text-xs text-gray-400">
+      <div className="flex-1" />
+
+      <div className="pb-2 text-center">
+        <p className="text-xs text-gray-400 leading-relaxed">
           By signing up, you agree to our{" "}
-          <a href="#" className="text-blue-500 hover:underline">Terms of Service</a>
-          {" "}and{" "}
+          <a href="#" className="text-blue-500 hover:underline">Terms of
+          Service</a>{" "}and{" "}
           <a href="#" className="text-gray-500 hover:underline">Privacy Policy</a>.
         </p>
       </div>
 
-      <div className="pb-4 text-center">
+      <div className="pb-8 pt-1 text-center">
         <p className="text-sm text-gray-500">
           Already have an account?{" "}
           <button

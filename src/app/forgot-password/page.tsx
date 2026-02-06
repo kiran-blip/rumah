@@ -8,23 +8,23 @@ export default function ForgotPasswordPage() {
 
   return (
     <div className="flex flex-col min-h-screen px-8 fade-in">
-      <div className="flex justify-end pt-4">
+      <div className="flex justify-end pt-6">
         <Logo size="small" />
       </div>
 
-      <div className="mt-16 mb-8">
+      <div className="mt-20 mb-10">
         <h1 className="text-4xl font-extrabold text-gray-800 leading-tight">
           Oh, no !
         </h1>
         <h1 className="text-4xl font-extrabold text-gray-800 leading-tight">
           I forgot
         </h1>
-        <p className="text-gray-400 mt-4 text-sm leading-relaxed">
+        <p className="text-gray-400 mt-5 text-sm leading-relaxed max-w-[280px]">
           Enter your email, phone, or username and we&apos;ll send you a link to change a new password
         </p>
       </div>
 
-      <div className="w-full flex flex-col gap-6 mt-8">
+      <div className="w-full flex flex-col gap-8 mt-6">
         <input
           type="text"
           placeholder="Username, Email or Phone Number"
@@ -39,7 +39,7 @@ export default function ForgotPasswordPage() {
         </button>
       </div>
 
-      <div className="mt-auto pb-8 text-center">
+      <div className="mt-auto pb-10 text-center">
         <p className="text-sm text-gray-500">
           Don&apos;t have an account?{" "}
           <button

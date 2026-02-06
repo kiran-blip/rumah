@@ -33,9 +33,9 @@ const ChevronRight = () => (
 
 export default function DashboardPage() {
   return (
-    <div className="flex flex-col min-h-screen pb-24 fade-in">
+    <div className="flex flex-col min-h-screen pb-24 fade-in" style={{ background: "#fafafa" }}>
       {/* Header */}
-      <div className="flex items-center justify-between px-6 pt-6 pb-4">
+      <div className="flex items-center justify-between px-6 pt-10 pb-6">
         <h1 className="text-2xl font-bold text-gray-800">
           Hi John! <span>&#128049;</span>
         </h1>
@@ -48,7 +48,7 @@ export default function DashboardPage() {
       </div>
 
       {/* Dashboard Card */}
-      <div className="px-6 mb-6">
+      <div className="px-6 mb-8">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-lg font-bold text-gray-800">Your dashboard</h2>
           <ChevronRight />
@@ -58,7 +58,7 @@ export default function DashboardPage() {
             <p className="font-semibold text-gray-700">Pending verifications</p>
             <ChevronRight />
           </div>
-          <div className="flex items-center gap-3 mb-3 bg-blue-50 rounded-xl p-3">
+          <div className="flex items-center gap-3 mb-4 bg-blue-50 rounded-xl p-3">
             <ShieldIcon />
             <div className="flex-1">
               <p className="font-semibold text-sm text-gray-800">Identity Verification</p>
@@ -73,7 +73,7 @@ export default function DashboardPage() {
       </div>
 
       {/* Messages Section */}
-      <div className="px-6 mb-6">
+      <div className="px-6 mb-8">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-lg font-bold text-gray-800">Messages</h2>
           <div className="flex items-center gap-1">
@@ -109,7 +109,7 @@ export default function DashboardPage() {
       </div>
 
       {/* Homes for you */}
-      <div className="px-6 mb-6">
+      <div className="px-6 mb-8">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-lg font-bold text-gray-800">Homes for you</h2>
           <div className="flex items-center gap-1">
@@ -129,8 +129,8 @@ export default function DashboardPage() {
             </div>
             <div className="p-3 flex-1 min-w-0">
               <div className="flex items-baseline gap-1">
-                <span className="font-bold text-lg text-gray-800">2-be</span>
-                <span className="text-gray-400 text-xs">| 12 th</span>
+                <span className="font-bold text-lg text-gray-800">2-bed</span>
+                <span className="text-gray-400 text-xs">| 12th floor</span>
               </div>
               <p className="font-semibold text-gray-800">Shoreditch</p>
               <p className="text-blue-600 font-semibold text-sm">&pound;1,950/month</p>
@@ -139,11 +139,11 @@ export default function DashboardPage() {
                   <circle cx="12" cy="12" r="10" />
                   <path d="M12 6v6l4 2" stroke="white" strokeWidth="2" strokeLinecap="round" />
                 </svg>
-                <span className="text-xs text-gray-500">from 10 May 10</span>
+                <span className="text-xs text-gray-500">from 10 May</span>
               </div>
             </div>
           </div>
-          <div className="px-4 pb-3 flex flex-col gap-1">
+          <div className="px-4 pb-3 flex flex-col gap-1.5">
             <div className="flex items-center gap-2">
               <CheckCircle />
               <span className="text-sm text-gray-600">Great light + Pet friendly</span>
@@ -168,8 +168,8 @@ export default function DashboardPage() {
             </div>
             <div className="p-3 flex-1 min-w-0">
               <div className="flex items-baseline gap-1">
-                <span className="font-bold text-lg text-gray-800">1-be</span>
-                <span className="text-gray-400 text-xs">| 5 th</span>
+                <span className="font-bold text-lg text-gray-800">1-bed</span>
+                <span className="text-gray-400 text-xs">| 5th floor</span>
               </div>
               <p className="font-semibold text-gray-800">Hackney</p>
               <p className="text-blue-600 font-semibold text-sm">&pound;1,600/month</p>
@@ -182,7 +182,7 @@ export default function DashboardPage() {
               </div>
             </div>
           </div>
-          <div className="px-4 pb-3 flex flex-col gap-1">
+          <div className="px-4 pb-3 flex flex-col gap-1.5">
             <div className="flex items-center gap-2">
               <CheckCircle />
               <span className="text-sm text-gray-600">Quiet street + Balcony</span>

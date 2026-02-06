@@ -9,18 +9,18 @@ export default function SignupPage() {
   const [showConfirm, setShowConfirm] = useState(false);
 
   return (
-    <div className="flex flex-col min-h-screen px-8 pt-16 fade-in">
-      <div className="mb-8">
+    <div className="flex flex-col min-h-screen px-8 fade-in">
+      <div className="pt-20 mb-10">
         <h1 className="text-4xl font-extrabold text-gray-800 leading-tight">
           Hi :)
         </h1>
         <h1 className="text-4xl font-extrabold text-gray-800 leading-tight">
           Welcome
         </h1>
-        <p className="text-gray-400 mt-2">Let&apos;s create an account</p>
+        <p className="text-gray-400 mt-3 text-sm">Let&apos;s create an account</p>
       </div>
 
-      <div className="w-full flex flex-col gap-1">
+      <div className="w-full flex flex-col gap-3">
         <div className="relative">
           <input
             type="text"
@@ -54,7 +54,7 @@ export default function SignupPage() {
           <button
             type="button"
             onClick={() => setShowPassword(!showPassword)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 text-gray-400 p-2"
+            className="absolute right-0 top-3 text-gray-400 p-2"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               {showPassword ? (
@@ -73,7 +73,7 @@ export default function SignupPage() {
           <p className="text-xs text-gray-400 mt-1">Must contain a number and least of 6 characters</p>
         </div>
 
-        <div className="relative mt-2">
+        <div className="relative">
           <input
             type={showConfirm ? "text" : "password"}
             placeholder="Confirm Password"
@@ -82,8 +82,7 @@ export default function SignupPage() {
           <button
             type="button"
             onClick={() => setShowConfirm(!showConfirm)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 text-gray-400 p-2"
-            style={{ top: "calc(50% - 10px)" }}
+            className="absolute right-0 top-3 text-gray-400 p-2"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               {showConfirm ? (
@@ -103,14 +102,14 @@ export default function SignupPage() {
         </div>
 
         <button
-          className="btn-dark mt-6"
+          className="btn-dark mt-8"
           onClick={() => router.push("/role-select")}
         >
           Sign Up
         </button>
       </div>
 
-      <div className="mt-auto pb-8 text-center">
+      <div className="mt-auto pb-10 text-center">
         <p className="text-sm text-gray-500">
           Have an account?{" "}
           <button

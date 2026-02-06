@@ -47,21 +47,25 @@ function HowItWorksContent() {
   const content = role === "landlord" ? landlordContent : tenantContent;
 
   return (
-    <div className="flex flex-col min-h-screen px-8 pt-16 fade-in">
-      <h1 className="text-3xl font-extrabold text-gray-800 leading-tight mb-12">
+    <div className="flex flex-col min-h-screen px-8 fade-in">
+      <div className="flex-1" />
+
+      <h1 className="text-3xl font-extrabold text-gray-800 leading-tight mb-16">
         {content.title}
       </h1>
 
-      <div className="flex flex-col gap-6 text-center">
+      <div className="flex flex-col gap-8 text-center">
         {content.points.map((point, i) => (
           <div key={i} className="slide-in" style={{ animationDelay: `${i * 0.15}s` }}>
             <p className="font-bold text-lg text-gray-800">{point.bold}</p>
-            <p className="text-gray-500 italic">{point.detail}</p>
+            <p className="text-gray-500 italic mt-1">{point.detail}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-auto pb-10 pt-12">
+      <div className="flex-1" />
+
+      <div className="pb-10">
         <button
           className="btn-dark"
           onClick={() => router.push("/dashboard")}
