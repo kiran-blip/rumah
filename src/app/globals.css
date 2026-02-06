@@ -27,7 +27,7 @@ body {
   width: 100%;
   max-width: 430px;
   min-height: 100vh;
-  background: linear-gradient(180deg, #e8d5b7 0%, #ffffff 15%, #ffffff 85%, #e8d5b7 100%);
+  background: linear-gradient(180deg, #e8d5b7 0%, #f5ede3 4%, #ffffff 10%, #ffffff 90%, #f5ede3 96%, #e8d5b7 100%);
   position: relative;
   overflow-y: auto;
   overflow-x: hidden;

@@ -8,11 +8,11 @@ export default function ForgotPasswordPage() {
 
   return (
     <div className="flex flex-col min-h-screen px-8 fade-in">
-      <div className="flex justify-end pt-6">
+      <div className="flex justify-end pt-12">
         <Logo size="small" />
       </div>
 
-      <div className="mt-20 mb-10">
+      <div className="mt-12 mb-10">
         <h1 className="text-4xl font-extrabold text-gray-800 leading-tight">
           Oh, no !
         </h1>
